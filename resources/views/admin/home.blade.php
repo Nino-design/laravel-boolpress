@@ -1,5 +1,5 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>jgvjfyjf</h1>
+    <h1>Pagina amministratore</h1>
 @endsection

@@ -1,5 +1,6 @@
 @extends('layouts.dashboard')
 
 @section('content')
-    <h1>Pagina amministratore</h1>
+    <h1>I tuoi post</h1>
+   
 @endsection

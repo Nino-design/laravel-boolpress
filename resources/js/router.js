@@ -6,6 +6,8 @@ Vue.use(VueRouter)
 import Home from './pages/Home.vue';
 import About from './pages/About.vue';
 import Reviews from './pages/Reviews.vue';
+import NotFound from './pages/NotFound.vue';
+
 
 const router = new VueRouter({
     mode: 'history',
@@ -24,6 +26,11 @@ const router = new VueRouter({
             path: '/reviews',
             name: 'reviews',
             component: Reviews,
+        },
+        {
+            path: '/*',
+            name: 'page not found',
+            component: NotFound,
         },
 
     ]

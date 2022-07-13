@@ -9,10 +9,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav p-2">
                     <li class="nav-item active pe-3">
-                        <router-link to="/">Home<span class="sr-only">(current)</span></router-link>
+                        <router-link :to="{ name: 'home' }">Home<span class="sr-only">(current)</span></router-link>
                     </li>
-                    <li class="nav-item active">
-                        <router-link to="/about">About<span class="sr-only">(current)</span></router-link>
+                    <li class="nav-item active pe-3">
+                        <router-link :to="{ name: 'about' }">About<span class="sr-only">(current)</span></router-link>
+                    </li>
+                     <li class="nav-item active">
+                        <router-link :to="{ name: 'reviews' }">Reviews<span class="sr-only">(current)</span></router-link>
                     </li>
                 </ul>
             </div>

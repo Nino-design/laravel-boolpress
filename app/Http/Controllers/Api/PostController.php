@@ -10,6 +10,23 @@ class PostController extends Controller
 {
     public function index(){
         $posts = Post::all();
-        return response()->json($posts);
+        return response()->json([
+            'success' => 'true',
+            'result' => $posts
+        ]);
+    }
+    public function show($slug){
+        $post = Post::where('slug', '=', $slug)->with(['category', 'tags'])->first();
+        if($post){
+            return response()->json([
+                'success' => 'true',
+                'result' => $post
+            ]);
+        }
+        return response()->json([
+            'success' => 'false',
+            'error' => 'No post found'
+        ]);
+       
     }
 }

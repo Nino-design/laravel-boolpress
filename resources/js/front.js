@@ -21,6 +21,9 @@
  
 import App from './views/App.vue';
 import router from './router';
+
+window.axios = require("axios");
+window.axios.defaults.headers.common["X-Requested-With"] = "XMLHttpRequest";
  
  /**
   * Next, we will create a fresh Vue application instance and attach it to

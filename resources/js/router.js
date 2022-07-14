@@ -26,7 +26,7 @@ const router = new VueRouter({
             path: '/reviews',
             name: 'reviews',
             component: Reviews,
-        },
+        },  
         {
             path: '/*',
             name: 'page not found',
